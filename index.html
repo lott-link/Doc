@@ -1,19 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <!-- Meta Data -->
   <meta charset="UTF-8">
-  <title>Docsify Example</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="//unpkg.com/docsify/themes/vue.css">
-  <script>
-    window.$docsify = {
-      name: 'Docsify Example',
-      repo: 'https://github.com/lott-link/doc'
-    };
-  </script>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Your Project Documentation</title>
+  
+  <!-- Docsify and Theme -->
+  <link rel="stylesheet" href="https://unpkg.com/docsify/lib/themes/vue.css">
+  
+  <!-- Custom Styles (if needed) -->
+  <style>
+    .sidebar-nav h1 {
+      font-size: 1.6em;
+      line-height: 1.2;
+    }
+    /* Add more custom styles if needed */
+  </style>
 </head>
 <body>
-  <div id="app">Content is loading...</div>
-  <script src="//unpkg.com/docsify/lib/docsify.min.js"></script>
+  <!-- Docsify's root element -->
+  <div id="app"></div>
+  
+  <!-- Docsify Scripts -->
+  <script>
+    window.$docsify = {
+      name: 'Lott Link',
+      repo: 'https://github.com/lott-link/doc',
+      loadSidebar: true,
+      homepage: 'README.md',
+      themeColor: '#3F51B5',
+      logo: '/_media/icon.svg', // Replace with your own logo
+      auto2top: true, // Scroll to top on route change
+      notFoundPage: '404.md',
+      search: {
+        paths: 'auto',
+        placeholder: 'Search',
+        noData: 'No results!',
+        // other options
+      },
+      
+      // Add plugins, themes, and other configuration options here
+    };
+  </script>
+  <script src="https://unpkg.com/docsify/lib/docsify.min.js"></script>
+  <script src="https://unpkg.com/docsify/lib/plugins/search.min.js"></script>
+  <!-- Add more plugins as needed -->
+  
 </body>
 </html>
