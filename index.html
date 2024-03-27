@@ -6,46 +6,81 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Your Project Documentation</title>
   
-  <!-- Docsify and Theme -->
-  <link rel="stylesheet" href="https://unpkg.com/docsify/lib/themes/vue.css">
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="/_media/favicon.png">
   
-  <!-- Custom Styles (if needed) -->
+  <!-- Docsify and Custom Theme -->
+  <link rel="stylesheet" href="https://unpkg.com/docsify/themes/vue.css">
+  
+  <!-- Custom Styles -->
   <style>
+    :root {
+      --theme-color: #42b983; /* Primary color for the theme */
+    }
+
     .sidebar-nav h1 {
       font-size: 1.6em;
       line-height: 1.2;
     }
-    /* Add more custom styles if needed */
+
+    /* Custom styles for branding */
+    .app-name {
+      color: var(--theme-color);
+      font-weight: bold;
+    }
+
+    /* Additional custom styles */
+    /* ... */
   </style>
 </head>
 <body>
   <!-- Docsify's root element -->
   <div id="app"></div>
   
-  <!-- Docsify Scripts -->
+  <!-- Docsify Configuration -->
   <script>
     window.$docsify = {
-      name: 'Lott Link',
-      repo: 'https://github.com/lott-link/doc',
+      name: '<span class="app-name">Your Project</span>',
+      nameLink: '/', // Custom home link for the navbar brand
+      repo: 'https://github.com/lott-link/Doc',
       loadSidebar: true,
+      loadNavbar: true, // If you have a _navbar.md file for custom navbar
+      autoHeader: true, // Auto generate headers if your markdown files don't have them
+      coverpage: true, // If you have a _coverpage.md for a landing page
+      onlyCover: false, // Show only the cover page on the main route
       homepage: 'README.md',
-      themeColor: '#3F51B5',
-      logo: '/_media/icon.svg', // Replace with your own logo
-      auto2top: true, // Scroll to top on route change
       notFoundPage: '404.md',
+      themeColor: '#42b983',
+      logo: '/_media/logo.svg', // Replace with your own logo
+      auto2top: true,
+      executeScript: true, // If you have scripts within your markdown files
+      noEmoji: false, // Set to true if you want to disable emoji parsing
+      mergeNavbar: true, // Merge the navbar on small screens
+      maxLevel: 4, // Maximum level of subheadings to show in the sidebar
+      subMaxLevel: 2, // Maximum level of subheadings to show in the content's TOC
       search: {
+        maxAge: 86400000, // Expiration time for search results cache in milliseconds
         paths: 'auto',
         placeholder: 'Search',
         noData: 'No results!',
-        // other options
+        depth: 2, // Search depth
       },
-      
-      // Add plugins, themes, and other configuration options here
+      // Your preferred plugins
+      plugins: [
+        // Docsify plugins here
+      ],
     };
   </script>
+  
+  <!-- Docsify and Plugins -->
   <script src="https://unpkg.com/docsify/lib/docsify.min.js"></script>
   <script src="https://unpkg.com/docsify/lib/plugins/search.min.js"></script>
-  <!-- Add more plugins as needed -->
-  
+  <script src="https://unpkg.com/docsify-copy-code"></script> <!-- "Copy to Clipboard" for code blocks -->
+  <!-- Include more plugins as needed -->
+
+  <!-- Custom Scripts (if needed) -->
+  <script>
+    // Add any custom JavaScript you might need
+  </script>
 </body>
 </html>
