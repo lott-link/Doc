@@ -9,7 +9,7 @@
   <!-- Docsify and Theme -->
   <link rel="stylesheet" href="https://unpkg.com/docsify/lib/themes/vue.css">
   
-  <!-- Custom Styles (if needed) --> "DosVGA"
+  <!-- Custom Styles (if needed) --> 
   <style>
     @font-face {
     font-family: "DosVGA";
@@ -29,9 +29,9 @@
     }
     :root {
       --theme-color: #42b983; /* Primary color for the theme */
-      --bg-color: #f0f0f0; /* Background color */
-      --text-color: #333; /* Text color */
-      --font-family: 'Arial', sans-serif; /* Font family */
+      --bg-color: #020227; /* Background color */
+      --text-color: #FFFFFF; /* Text color */
+      --font-family: 'DosVGA'; /* Font family */
     }
 
     /* Apply the background color */
@@ -43,8 +43,8 @@
 
     /* Styling the sidebar background and text color */
     .sidebar {
-      background: #ffffff; /* Sidebar background color */
-      color: #333; /* Sidebar text color */
+      background: #020227; /* Sidebar background color */
+      color: #FFFFFF; /* Sidebar text color */
     }
 
     /* Navbar custom colors */
@@ -72,12 +72,12 @@
   <!-- Docsify Scripts -->
   <script>
     window.$docsify = {
-      name: 'Lott Link',
+      name: 'Lott Link Docs',
       repo: 'https://github.com/lott-link/doc',
       loadSidebar: true,
       homepage: 'README.md',
       themeColor: '#3F51B5',
-      logo: '/_media/logo.svg', // Replace with your own logo
+      logo: 'data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4NCjwhLS0gR2VuZXJhdG9yOiBBZG9iZSBJbGx1c3RyYXRvciAyNS4zLjEsIFNWRyBFeHBvcnQgUGx1Zy1JbiAuIFNWRyBWZXJzaW9uOiA2LjAwIEJ1aWxkIDApICAtLT4NCjxzdmcgdmVyc2lvbj0iMS4xIiBpZD0iTGF5ZXJfMSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgeD0iMHB4IiB5PSIwcHgiDQoJIHZpZXdCb3g9IjAgMCAxMzUgMTQ4LjI4IiBzdHlsZT0iZW5hYmxlLWJhY2tncm91bmQ6bmV3IDAgMCAxMzUgMTQ4LjI4OyIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSI+DQo8c3R5bGUgdHlwZT0idGV4dC9jc3MiPg0KCS5zdDB7ZmlsbDojMDA4QkQyO30NCjwvc3R5bGU+DQo8Zz4NCgk8cGF0aCBjbGFzcz0ic3QwIiBkPSJNMTE4LjI4LDQwLjYzTDgxLjM2LDE5LjMxYy02LjMxLTMuNjQtMTQuMDgtMy42NC0yMC4zOSwwTDI0LjA1LDQwLjYzQzE3Ljc0LDQ0LjI3LDEzLjg1LDUxLDEzLjg1LDU4LjI4djQyLjY0DQoJCWMwLDcuMjgsMy44OSwxNC4wMSwxMC4xOSwxNy42NmwzNi45MiwyMS4zMmM2LjMxLDMuNjQsMTQuMDgsMy42NCwyMC4zOSwwbDM2LjkyLTIxLjMyYzYuMzEtMy42NCwxMC4xOS0xMC4zNywxMC4xOS0xNy42NlY1OC4yOA0KCQlDMTI4LjQ4LDUxLDEyNC41OSw0NC4yNywxMTguMjgsNDAuNjN6IE03MS4xNywxMjkuODdjLTI3Ljc2LDAtNTAuMjctMjIuNTEtNTAuMjctNTAuMjdTNDMuNCwyOS4zMyw3MS4xNywyOS4zMw0KCQlzNTAuMjcsMjIuNTEsNTAuMjcsNTAuMjdTOTguOTMsMTI5Ljg3LDcxLjE3LDEyOS44N3oiLz4NCgk8cGF0aCBjbGFzcz0ic3QwIiBkPSJNOTMuOTEsNTMuMzZIODEuMjR2MTMuMDFINTQuMVY1My4zNkg0MS40M3YxMy4wMWgtOS40NFY3OWg5LjQ0djE1LjI5YzAsNC4xOSwwLjk4LDcuMzYsMi45NCw5LjUNCgkJYzEuOTYsMi4xNCw1LjAzLDMuMjEsOS4yMiwzLjIxaDIxLjg5Vjk0Ljc5SDU2LjgyYy0wLjg5LDAtMS41Ny0wLjMyLTIuMDMtMC45NWMtMC40Ni0wLjYzLTAuNjktMS41My0wLjY5LTIuN1Y3OWgyNy4xNHYxNS4yOQ0KCQljMCw0LjE5LDAuOTgsNy4zNiwyLjk0LDkuNWMxLjk2LDIuMTQsNS4wMywzLjIxLDkuMjIsMy4yMWgxMi45NVY5NC43OWgtOS43MWMtMC44OSwwLTEuNTctMC4zMi0yLjAzLTAuOTUNCgkJYy0wLjQ2LTAuNjMtMC42OS0xLjUzLTAuNjktMi43Vjc5aDEyLjQ0VjY2LjM3SDkzLjkxVjUzLjM2eiIvPg0KPC9nPg0KPC9zdmc+DQo=', 
       auto2top: true, // Scroll to top on route change
       notFoundPage: '404.md',
       search: {
