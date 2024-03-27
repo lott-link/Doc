@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Meta Data -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lott Link Docs</title>
+  
+  <!-- Docsify and Theme -->
+  <link rel="stylesheet" href="https://unpkg.com/docsify/lib/themes/vue.css">
+  
+  <!-- Custom Styles (if needed) --> 
+  <style>
+    @font-face {
+    font-family: "DosVGA";
+    src: url("https://db.onlinewebfonts.com/t/47d5fd8c3738de46ef0b3fe3f68c289a.eot");
+    src: url("https://db.onlinewebfonts.com/t/47d5fd8c3738de46ef0b3fe3f68c289a.eot?#iefix")format("embedded-opentype"),
+    url("https://db.onlinewebfonts.com/t/47d5fd8c3738de46ef0b3fe3f68c289a.woff2")format("woff2"),
+    url("https://db.onlinewebfonts.com/t/47d5fd8c3738de46ef0b3fe3f68c289a.woff")format("woff"),
+    url("https://db.onlinewebfonts.com/t/47d5fd8c3738de46ef0b3fe3f68c289a.ttf")format("truetype"),
+    url("https://db.onlinewebfonts.com/t/47d5fd8c3738de46ef0b3fe3f68c289a.svg#Perfect DOS VGA 437")format("svg");
+}
+
+
+
+    .sidebar-nav h1 {
+      font-size: 1.6em;
+      line-height: 1.2;
+    }
+    :root {
+      --theme-color: #42b983; /* Primary color for the theme */
+      --bg-color: #020227; /* Background color */
+      --text-color: #FFFFFF; /* Text color */
+      --font-family: 'DosVGA'; /* Font family */
+    }
+
+    /* Apply the background color */
+    body {
+      background-color: var(--bg-color);
+      color: var(--text-color); /* Apply the text color */
+      font-family: var(--font-family); /* Apply the font family */
+    }
+
+    /* Styling the sidebar background and text color */
+    .sidebar {
+      background: #020227; /* Sidebar background color */
+      color: #FFFFFF; /* Sidebar text color */
+    }
+
+    /* Navbar custom colors */
+    .navbar {
+      background: var(--theme-color); /* Navbar background color */
+      color: #ffffff; /* Navbar text color */
+    }
+
+    /* Link color */
+    a {
+      color: var(--theme-color);
+    }
+
+    /* Custom styles for branding */
+    .app-name {
+      color: #ffffff; /* Adjust the brand text color if needed */
+    }
+    /* Add more custom styles if needed */
+  </style>
+</head>
+<body>
+  <!-- Docsify's root element -->
+  <div id="app"></div>
+  
+  <!-- Docsify Scripts -->
+  <script>
+    window.$docsify = {
+      name: 'Lott Link Docs',
+      repo: 'https://github.com/lott-link/doc',
+      loadSidebar: true,
+      homepage: 'README.md',
+      themeColor: '#3F51B5',
+      logo: 'data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4NCjwhLS0gR2VuZXJhdG9yOiBBZG9iZSBJbGx1c3RyYXRvciAyNS4zLjEsIFNWRyBFeHBvcnQgUGx1Zy1JbiAuIFNWRyBWZXJzaW9uOiA2LjAwIEJ1aWxkIDApICAtLT4NCjxzdmcgdmVyc2lvbj0iMS4xIiBpZD0iTGF5ZXJfMSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgeD0iMHB4IiB5PSIwcHgiDQoJIHZpZXdCb3g9IjAgMCAxMzUgMTQ4LjI4IiBzdHlsZT0iZW5hYmxlLWJhY2tncm91bmQ6bmV3IDAgMCAxMzUgMTQ4LjI4OyIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSI+DQo8c3R5bGUgdHlwZT0idGV4dC9jc3MiPg0KCS5zdDB7ZmlsbDojMDA4QkQyO30NCjwvc3R5bGU+DQo8Zz4NCgk8cGF0aCBjbGFzcz0ic3QwIiBkPSJNMTE4LjI4LDQwLjYzTDgxLjM2LDE5LjMxYy02LjMxLTMuNjQtMTQuMDgtMy42NC0yMC4zOSwwTDI0LjA1LDQwLjYzQzE3Ljc0LDQ0LjI3LDEzLjg1LDUxLDEzLjg1LDU4LjI4djQyLjY0DQoJCWMwLDcuMjgsMy44OSwxNC4wMSwxMC4xOSwxNy42NmwzNi45MiwyMS4zMmM2LjMxLDMuNjQsMTQuMDgsMy42NCwyMC4zOSwwbDM2LjkyLTIxLjMyYzYuMzEtMy42NCwxMC4xOS0xMC4zNywxMC4xOS0xNy42NlY1OC4yOA0KCQlDMTI4LjQ4LDUxLDEyNC41OSw0NC4yNywxMTguMjgsNDAuNjN6IE03MS4xNywxMjkuODdjLTI3Ljc2LDAtNTAuMjctMjIuNTEtNTAuMjctNTAuMjdTNDMuNCwyOS4zMyw3MS4xNywyOS4zMw0KCQlzNTAuMjcsMjIuNTEsNTAuMjcsNTAuMjdTOTguOTMsMTI5Ljg3LDcxLjE3LDEyOS44N3oiLz4NCgk8cGF0aCBjbGFzcz0ic3QwIiBkPSJNOTMuOTEsNTMuMzZIODEuMjR2MTMuMDFINTQuMVY1My4zNkg0MS40M3YxMy4wMWgtOS40NFY3OWg5LjQ0djE1LjI5YzAsNC4xOSwwLjk4LDcuMzYsMi45NCw5LjUNCgkJYzEuOTYsMi4xNCw1LjAzLDMuMjEsOS4yMiwzLjIxaDIxLjg5Vjk0Ljc5SDU2LjgyYy0wLjg5LDAtMS41Ny0wLjMyLTIuMDMtMC45NWMtMC40Ni0wLjYzLTAuNjktMS41My0wLjY5LTIuN1Y3OWgyNy4xNHYxNS4yOQ0KCQljMCw0LjE5LDAuOTgsNy4zNiwyLjk0LDkuNWMxLjk2LDIuMTQsNS4wMywzLjIxLDkuMjIsMy4yMWgxMi45NVY5NC43OWgtOS43MWMtMC44OSwwLTEuNTctMC4zMi0yLjAzLTAuOTUNCgkJYy0wLjQ2LTAuNjMtMC42OS0xLjUzLTAuNjktMi43Vjc5aDEyLjQ0VjY2LjM3SDkzLjkxVjUzLjM2eiIvPg0KPC9nPg0KPC9zdmc+DQo=', 
+      auto2top: true, // Scroll to top on route change
+      notFoundPage: '404.md',
+      search: {
+        paths: 'auto',
+        placeholder: 'Search',
+        noData: 'No results!',
+        // other options
+      },
+      
+      // Add plugins, themes, and other configuration options here
+    };
+  </script>
+  <script src="https://unpkg.com/docsify/lib/docsify.min.js"></script>
+  <script src="https://unpkg.com/docsify/lib/plugins/search.min.js"></script>
+  <!-- Add more plugins as needed -->
+  
+</body>
+</html>
