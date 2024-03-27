@@ -1,6 +1,6 @@
 # Lott Link
 
-Lott Link is not something that can be defined. U must use it. but it is All about Web 3.
+Lott Link Try to Solve part of WEB3 problem. the non Solve problem OF Randomness.ß
 Welcome to the New world.
 
 ## Naming:
