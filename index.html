@@ -4,83 +4,95 @@
   <!-- Meta Data -->
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Your Project Documentation</title>
+  <title>Lott Link Docs</title>
   
-  <!-- Favicon -->
-  <link rel="icon" type="image/png" href="/_media/favicon.png">
+  <!-- Docsify and Theme -->
+  <link rel="stylesheet" href="https://unpkg.com/docsify/lib/themes/vue.css">
   
-  <!-- Docsify and Custom Theme -->
-  <link rel="stylesheet" href="https://unpkg.com/docsify/themes/vue.css">
-  
-  <!-- Custom Styles -->
+  <!-- Custom Styles (if needed) --> "DosVGA"
   <style>
-    :root {
-      --theme-color: #42b983; /* Primary color for the theme */
-    }
+    @font-face {
+    font-family: "DosVGA";
+    src: url("https://db.onlinewebfonts.com/t/47d5fd8c3738de46ef0b3fe3f68c289a.eot");
+    src: url("https://db.onlinewebfonts.com/t/47d5fd8c3738de46ef0b3fe3f68c289a.eot?#iefix")format("embedded-opentype"),
+    url("https://db.onlinewebfonts.com/t/47d5fd8c3738de46ef0b3fe3f68c289a.woff2")format("woff2"),
+    url("https://db.onlinewebfonts.com/t/47d5fd8c3738de46ef0b3fe3f68c289a.woff")format("woff"),
+    url("https://db.onlinewebfonts.com/t/47d5fd8c3738de46ef0b3fe3f68c289a.ttf")format("truetype"),
+    url("https://db.onlinewebfonts.com/t/47d5fd8c3738de46ef0b3fe3f68c289a.svg#Perfect DOS VGA 437")format("svg");
+}
+
+
 
     .sidebar-nav h1 {
       font-size: 1.6em;
       line-height: 1.2;
     }
+    :root {
+      --theme-color: #42b983; /* Primary color for the theme */
+      --bg-color: #f0f0f0; /* Background color */
+      --text-color: #333; /* Text color */
+      --font-family: 'Arial', sans-serif; /* Font family */
+    }
+
+    /* Apply the background color */
+    body {
+      background-color: var(--bg-color);
+      color: var(--text-color); /* Apply the text color */
+      font-family: var(--font-family); /* Apply the font family */
+    }
+
+    /* Styling the sidebar background and text color */
+    .sidebar {
+      background: #ffffff; /* Sidebar background color */
+      color: #333; /* Sidebar text color */
+    }
+
+    /* Navbar custom colors */
+    .navbar {
+      background: var(--theme-color); /* Navbar background color */
+      color: #ffffff; /* Navbar text color */
+    }
+
+    /* Link color */
+    a {
+      color: var(--theme-color);
+    }
 
     /* Custom styles for branding */
     .app-name {
-      color: var(--theme-color);
-      font-weight: bold;
+      color: #ffffff; /* Adjust the brand text color if needed */
     }
-
-    /* Additional custom styles */
-    /* ... */
+    /* Add more custom styles if needed */
   </style>
 </head>
 <body>
   <!-- Docsify's root element -->
   <div id="app"></div>
   
-  <!-- Docsify Configuration -->
+  <!-- Docsify Scripts -->
   <script>
     window.$docsify = {
-      name: '<span class="app-name">Your Project</span>',
-      nameLink: '/', // Custom home link for the navbar brand
-      repo: 'https://github.com/lott-link/Doc',
+      name: 'Lott Link',
+      repo: 'https://github.com/lott-link/doc',
       loadSidebar: true,
-      loadNavbar: true, // If you have a _navbar.md file for custom navbar
-      autoHeader: true, // Auto generate headers if your markdown files don't have them
-      coverpage: true, // If you have a _coverpage.md for a landing page
-      onlyCover: false, // Show only the cover page on the main route
       homepage: 'README.md',
-      notFoundPage: '404.md',
-      themeColor: '#42b983',
+      themeColor: '#3F51B5',
       logo: '/_media/logo.svg', // Replace with your own logo
-      auto2top: true,
-      executeScript: true, // If you have scripts within your markdown files
-      noEmoji: false, // Set to true if you want to disable emoji parsing
-      mergeNavbar: true, // Merge the navbar on small screens
-      maxLevel: 4, // Maximum level of subheadings to show in the sidebar
-      subMaxLevel: 2, // Maximum level of subheadings to show in the content's TOC
+      auto2top: true, // Scroll to top on route change
+      notFoundPage: '404.md',
       search: {
-        maxAge: 86400000, // Expiration time for search results cache in milliseconds
         paths: 'auto',
         placeholder: 'Search',
         noData: 'No results!',
-        depth: 2, // Search depth
+        // other options
       },
-      // Your preferred plugins
-      plugins: [
-        // Docsify plugins here
-      ],
+      
+      // Add plugins, themes, and other configuration options here
     };
   </script>
-  
-  <!-- Docsify and Plugins -->
   <script src="https://unpkg.com/docsify/lib/docsify.min.js"></script>
   <script src="https://unpkg.com/docsify/lib/plugins/search.min.js"></script>
-  <script src="https://unpkg.com/docsify-copy-code"></script> <!-- "Copy to Clipboard" for code blocks -->
-  <!-- Include more plugins as needed -->
-
-  <!-- Custom Scripts (if needed) -->
-  <script>
-    // Add any custom JavaScript you might need
-  </script>
+  <!-- Add more plugins as needed -->
+  
 </body>
 </html>
