@@ -2,6 +2,8 @@
 
 
 * [HOME](./)
+* [Bank Note NFT](./bankNote/index)
+  * [version](./bankNote/version)  
 <!--
 * [Tutorials](./tutorials/index)
   * [Tomcat](./tutorials/tomcat/index)
