@@ -5,5 +5,5 @@
 
 - Bank Note NFT
 
-  - [Intro](./bankNote/index.md)
-  - [versions](./bankNote/version)  
+  - [Intro](bankNote/index.md)
+  - [versions](bankNote/version.md)  
