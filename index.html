@@ -23,8 +23,10 @@
         repo: "https://github.com/lott-link/doc",
         
 
-        loadSidebar: './sidebar.md',
-
+        loadSidebar: true,
+      alias: {
+        '/.*/_sidebar.md': '/sidebar.md'
+      },
         logo: "./media/IconTK45*45.svg",
         noEmoji: true,
         auto2top: true, // Scroll to top on route change
