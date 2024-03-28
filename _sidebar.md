@@ -1,9 +1,10 @@
 <!-- docs/_sidebar.md -->
 
 
-* [HOME](./)
-* [Bank Note NFT](./bankNote/index)
-  * [version](./bankNote/version)  
+- [HOME](./)
+- Bank Note NFT
+  - [Intro](./bankNote/index)
+  - [versions](./bankNote/version)  
 <!--
 * [Tutorials](./tutorials/index)
   * [Tomcat](./tutorials/tomcat/index)
