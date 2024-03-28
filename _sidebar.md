@@ -1,18 +1,9 @@
-<!-- docs/_sidebar.md -->
 
 
-- [HOME](./)
+
+- [HOME](README.md)
+
 - Bank Note NFT
-  - [Intro](./bankNote/index)
+
+  - [Intro](./bankNote/index.md)
   - [versions](./bankNote/version)  
-<!--
-* [Tutorials](./tutorials/index)
-  * [Tomcat](./tutorials/tomcat/index)
-  * [Cloud](./tutorials/cloud/index)
-  * [Java](./tutorials/java/index)
-
-* [About](./about/index)
-
-* [Contact](./contact/index)
-
--->
