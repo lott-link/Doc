@@ -1,56 +1,59 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <!-- Meta Data -->
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Lott Link Docs</title>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta
+      name="viewport"
+      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+    />
+    <link
+      rel="stylesheet"
+      href="//cdn.jsdelivr.net/npm/docsify-themeable@0/dist/css/theme-simple.css"
+    />
+    <link rel="shortcut icon" href="_media/IconGY45_45.png" type="image/png" />
+    <title>Lott Link Docs</title>
+  </head>
+  <body>
+    <div id="app"></div>
 
-  <link rel="icon" sizes="45x45" href="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9Im5vIj8+CjwhRE9DVFlQRSBzdmcgUFVCTElDICItLy9XM0MvL0RURCBTVkcgMS4xLy9FTiIgImh0dHA6Ly93d3cudzMub3JnL0dyYXBoaWNzL1NWRy8xLjEvRFREL3N2ZzExLmR0ZCI+CjwhLS0gQ3JlYXRlZCB3aXRoIFZlY3Rvcm5hdG9yIChodHRwOi8vdmVjdG9ybmF0b3IuaW8vKSAtLT4KPHN2ZyBzdHJva2UtbWl0ZXJsaW1pdD0iMTAiIHN0eWxlPSJmaWxsLXJ1bGU6bm9uemVybztjbGlwLXJ1bGU6ZXZlbm9kZDtzdHJva2UtbGluZWNhcDpyb3VuZDtzdHJva2UtbGluZWpvaW46cm91bmQ7IiB2ZXJzaW9uPSIxLjEiIHZpZXdCb3g9IjAgMCA0NSA0NSIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayI+CjxkZWZzLz4KPGNsaXBQYXRoIGlkPSJBcnRib2FyZEZyYW1lIj4KPHJlY3QgaGVpZ2h0PSI0NSIgd2lkdGg9IjQ1IiB4PSIwIiB5PSIwIi8+CjwvY2xpcFBhdGg+CjxnIGNsaXAtcGF0aD0idXJsKCNBcnRib2FyZEZyYW1lKSIgaWQ9IkxheWVyLTEiPgo8cGF0aCBkPSJNMjIuNSA1Mi42Nzk3TC0zLjYzNjQgMzcuNTg5OUwtMy42MzY0IDcuNDEwMTRMMjIuNS03LjY3OTcyTDQ4LjYzNjQgNy40MTAxNEw0OC42MzY0IDM3LjU4OTlMMjIuNSA1Mi42Nzk3WiIgZmlsbD0iIzAwODAwMCIgZmlsbC1ydWxlPSJldmVub2RkIiBvcGFjaXR5PSIxIiBzdHJva2U9Im5vbmUiLz4KPGcgb3BhY2l0eT0iMSI+CjxwYXRoIGQ9Ik0zNS40ODM4IDExLjc2MTdMMjUuMzExNyA1Ljg4NzY1QzIzLjU3MzEgNC44ODQ3NiAyMS40MzI0IDQuODg0NzYgMTkuNjkzOCA1Ljg4NzY1TDkuNTIxNzIgMTEuNzYxN0M3Ljc4MzIgMTIuNzY0NiA2LjcxMTQ0IDE0LjYxODggNi43MTE0NCAxNi42MjQ2TDYuNzExNDQgMjguMzcyN0M2LjcxMTQ0IDMwLjM3ODQgNy43ODMyIDMyLjIzMjcgOS41MTg5NyAzMy4yMzgzTDE5LjY5MTEgMzkuMTEyNEMyMS40Mjk2IDQwLjExNTIgMjMuNTcwNCA0MC4xMTUyIDI1LjMwODkgMzkuMTEyNEwzNS40ODEgMzMuMjM4M0MzNy4yMTk1IDMyLjIzNTQgMzguMjg4NSAzMC4zODEyIDM4LjI4ODUgMjguMzcyN0wzOC4yODg1IDE2LjYyNDZDMzguMjk0MSAxNC42MTg4IDM3LjIyMjMgMTIuNzY0NiAzNS40ODM4IDExLjc2MTdaTTIyLjUwNDEgMzYuMzQ4OUMxNC44NTU3IDM2LjM0ODkgOC42NTM4NCAzMC4xNDcgOC42NTM4NCAyMi40OTg2QzguNjUzODQgMTQuODUwMiAxNC44NTMgOC42NDgzNCAyMi41MDQxIDguNjQ4MzRDMzAuMTU1MyA4LjY0ODM0IDM2LjM1NDQgMTQuODUwMiAzNi4zNTQ0IDIyLjQ5ODZDMzYuMzU0NCAzMC4xNDcgMzAuMTUyNSAzNi4zNDg5IDIyLjUwNDEgMzYuMzQ4OVoiIGZpbGw9IiNmZmZmMDAiIGZpbGwtcnVsZT0iZXZlbm9kZCIgb3BhY2l0eT0iMSIgc3Ryb2tlPSJub25lIi8+CjxwYXRoIGQ9Ik0yOC43Njk0IDE1LjI2OUwyNS4yNzg2IDE1LjI2OUwyNS4yNzg2IDE4Ljg1MzVMMTcuODAxIDE4Ljg1MzVMMTcuODAxIDE1LjI2OUwxNC4zMTAyIDE1LjI2OUwxNC4zMTAyIDE4Ljg1MzVMMTEuNzA5MyAxOC44NTM1TDExLjcwOTMgMjIuMzMzM0wxNC4zMTAyIDIyLjMzMzNMMTQuMzEwMiAyNi41NDZDMTQuMzEwMiAyNy43MDA0IDE0LjU4MDIgMjguNTczOCAxNS4xMjAyIDI5LjE2MzRDMTUuNjYwMyAyOS43NTMgMTYuNTA2MSAzMC4wNDc4IDE3LjY2MDUgMzAuMDQ3OEwyMy42OTE2IDMwLjA0NzhMMjMuNjkxNiAyNi42ODM3TDE4LjU1MDQgMjYuNjgzN0MxOC4zMDUyIDI2LjY4MzcgMTguMTE3OSAyNi41OTU2IDE3Ljk5MTEgMjYuNDIyQzE3Ljg2NDQgMjYuMjQ4NCAxNy44MDEgMjYuMDAwNSAxNy44MDEgMjUuNjc4MUwxNy44MDEgMjIuMzMzM0wyNS4yNzg2IDIyLjMzMzNMMjUuMjc4NiAyNi41NDZDMjUuMjc4NiAyNy43MDA0IDI1LjU0ODYgMjguNTczOCAyNi4wODg2IDI5LjE2MzRDMjYuNjI4NiAyOS43NTMgMjcuNDc0NSAzMC4wNDc4IDI4LjYyODkgMzAuMDQ3OEwzMi4xOTY4IDMwLjA0NzhMMzIuMTk2OCAyNi42ODM3TDI5LjUyMTYgMjYuNjgzN0MyOS4yNzY0IDI2LjY4MzcgMjkuMDg5IDI2LjU5NTYgMjguOTYyMyAyNi40MjJDMjguODM1NSAyNi4yNDg0IDI4Ljc3MjIgMjYuMDAwNSAyOC43NzIyIDI1LjY3ODFMMjguNzcyMiAyMi4zMzMzTDMyLjE5OTYgMjIuMzMzM0wzMi4xOTk2IDE4Ljg1MzVMMjguNzY5NCAxOC44NTM1TDI4Ljc2OTQgMTUuMjY5WiIgZmlsbD0iI2ZmZmYwMCIgZmlsbC1ydWxlPSJldmVub2RkIiBvcGFjaXR5PSIxIiBzdHJva2U9Im5vbmUiLz4KPC9nPgo8L2c+Cjwvc3ZnPgo=">
+    <script>
+      window.$docsify = {
+        name: "Lott Link Docs",
+        repo: "https://github.com/lott-link/doc",
 
+        homepage: "README.md",
 
-  
-  <!-- Docsify and Theme -->
-  <link rel="stylesheet" href="https://unpkg.com/docsify/lib/themes/vue.css">
-  
-  <!-- Custom Styles (if needed) -->
-  <style>
-    .sidebar-nav h1 {
-      font-size: 1.6em;
-      line-height: 1.2;
-    }
-    /* Add more custom styles if needed */
-  </style>
-</head>
-<body>
-  <!-- Docsify's root element -->
-  <div id="app"></div>
-  
-  <!-- Docsify Scripts -->
-  <script>
-    window.$docsify = {
-      name: 'Lott Link Docs',
-      repo: 'https://github.com/lott-link/doc',
-      loadSidebar: true,
-      homepage: 'README.md',
-      themeColor: '#3F51B5',
-      logo: 'data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9Im5vIj8+CjwhRE9DVFlQRSBzdmcgUFVCTElDICItLy9XM0MvL0RURCBTVkcgMS4xLy9FTiIgImh0dHA6Ly93d3cudzMub3JnL0dyYXBoaWNzL1NWRy8xLjEvRFREL3N2ZzExLmR0ZCI+CjwhLS0gQ3JlYXRlZCB3aXRoIFZlY3Rvcm5hdG9yIChodHRwOi8vdmVjdG9ybmF0b3IuaW8vKSAtLT4KPHN2ZyBzdHJva2UtbWl0ZXJsaW1pdD0iMTAiIHN0eWxlPSJmaWxsLXJ1bGU6bm9uemVybztjbGlwLXJ1bGU6ZXZlbm9kZDtzdHJva2UtbGluZWNhcDpyb3VuZDtzdHJva2UtbGluZWpvaW46cm91bmQ7IiB2ZXJzaW9uPSIxLjEiIHZpZXdCb3g9IjAgMCA0NSA0NSIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayI+CjxkZWZzLz4KPGcgaWQ9IkxheWVyLTEiPgo8ZyBvcGFjaXR5PSIxIj4KPHBhdGggZD0iTTM5LjA3NjIgOC43OTA1NUwyNi4wODk2IDEuMjkxMjRDMjMuODcwMSAwLjAxMDg2NTEgMjEuMTM3IDAuMDEwODY1MSAxOC45MTc0IDEuMjkxMjRMNS45MzA4IDguNzkwNTVDMy43MTEyNiAxMC4wNzA5IDIuMzQyOTUgMTIuNDM4MiAyLjM0Mjk1IDE0Ljk5ODlMMi4zNDI5NSAyOS45OTc2QzIuMzQyOTUgMzIuNTU4MyAzLjcxMTI2IDM0LjkyNTYgNS45MjcyOSAzNi4yMDk1TDE4LjkxMzkgNDMuNzA4OEMyMS4xMzM0IDQ0Ljk4OTEgMjMuODY2NSA0NC45ODkxIDI2LjA4NjEgNDMuNzA4OEwzOS4wNzI3IDM2LjIwOTVDNDEuMjkyMiAzNC45MjkxIDQyLjY1NyAzMi41NjE4IDQyLjY1NyAyOS45OTc2TDQyLjY1NyAxNC45OTg5QzQyLjY2NDEgMTIuNDM4MiA0MS4yOTU3IDEwLjA3MDkgMzkuMDc2MiA4Ljc5MDU1Wk0yMi41MDUzIDQwLjE4MDdDMTIuNzQwNyA0MC4xODA3IDQuODIyNzkgMzIuMjYyOCA0LjgyMjc5IDIyLjQ5ODJDNC44MjI3OSAxMi43MzM3IDEyLjczNzIgNC44MTU3NyAyMi41MDUzIDQuODE1NzdDMzIuMjczNCA0LjgxNTc3IDQwLjE4NzcgMTIuNzMzNyA0MC4xODc3IDIyLjQ5ODJDNDAuMTg3NyAzMi4yNjI4IDMyLjI2OTggNDAuMTgwNyAyMi41MDUzIDQwLjE4MDdaIiBmaWxsPSIjMDIwMjI3IiBmaWxsLXJ1bGU9ImV2ZW5vZGQiIG9wYWNpdHk9IjEiIHN0cm9rZT0ibm9uZSIvPgo8cGF0aCBkPSJNMzAuNTA0MSAxMy4yNjgzTDI2LjA0NzQgMTMuMjY4M0wyNi4wNDc0IDE3Ljg0NDZMMTYuNTAwOSAxNy44NDQ2TDE2LjUwMDkgMTMuMjY4M0wxMi4wNDQyIDEzLjI2ODNMMTIuMDQ0MiAxNy44NDQ2TDguNzIzNyAxNy44NDQ2TDguNzIzNyAyMi4yODcyTDEyLjA0NDIgMjIuMjg3MkwxMi4wNDQyIDI3LjY2NTRDMTIuMDQ0MiAyOS4xMzkzIDEyLjM4ODkgMzAuMjU0MyAxMy4wNzg0IDMxLjAwNzFDMTMuNzY3OCAzMS43NTk4IDE0Ljg0NzcgMzIuMTM2MiAxNi4zMjE1IDMyLjEzNjJMMjQuMDIxMyAzMi4xMzYyTDI0LjAyMTMgMjcuODQxM0wxNy40NTc3IDI3Ljg0MTNDMTcuMTQ0NiAyNy44NDEzIDE2LjkwNTQgMjcuNzI4OCAxNi43NDM2IDI3LjUwNzJDMTYuNTgxOCAyNy4yODU2IDE2LjUwMDkgMjYuOTY5IDE2LjUwMDkgMjYuNTU3NEwxNi41MDA5IDIyLjI4NzJMMjYuMDQ3NCAyMi4yODcyTDI2LjA0NzQgMjcuNjY1NEMyNi4wNDc0IDI5LjEzOTMgMjYuMzkyMSAzMC4yNTQzIDI3LjA4MTUgMzEuMDA3MUMyNy43NzEgMzEuNzU5OCAyOC44NTA4IDMyLjEzNjIgMzAuMzI0NyAzMi4xMzYyTDM0Ljg3OTggMzIuMTM2MkwzNC44Nzk4IDI3Ljg0MTNMMzEuNDY0MyAyNy44NDEzQzMxLjE1MTMgMjcuODQxMyAzMC45MTIxIDI3LjcyODggMzAuNzUwMyAyNy41MDcyQzMwLjU4ODUgMjcuMjg1NiAzMC41MDc2IDI2Ljk2OSAzMC41MDc2IDI2LjU1NzRMMzAuNTA3NiAyMi4yODcyTDM0Ljg4MzMgMjIuMjg3MkwzNC44ODMzIDE3Ljg0NDZMMzAuNTA0MSAxNy44NDQ2TDMwLjUwNDEgMTMuMjY4M1oiIGZpbGw9IiMwMjAyMjciIGZpbGwtcnVsZT0iZXZlbm9kZCIgb3BhY2l0eT0iMSIgc3Ryb2tlPSJub25lIi8+CjwvZz4KPC9nPgo8L3N2Zz4K', 
-      auto2top: true, // Scroll to top on route change
-      notFoundPage: '404.md',
-      search: {
-        paths: 'auto',
-        placeholder: 'Search',
-        noData: 'No results!',
-        // other options
-      },
-      
-      // Add plugins, themes, and other configuration options here
-    };
-  </script>
-  <script src="https://unpkg.com/docsify/lib/docsify.min.js"></script>
-  <script src="https://unpkg.com/docsify/lib/plugins/search.min.js"></script>
-  <!-- Add more plugins as needed -->
-  
-</body>
+        logo: "_media/IconTK45*45.svg",
+        noEmoji: true,
+        auto2top: true, // Scroll to top on route change
+      };
+    </script>
+    <script src="//cdn.jsdelivr.net/npm/docsify/lib/docsify.min.js"></script>
+    <script src="//cdn.jsdelivr.net/npm/docsify-themeable@0"></script>
+    <script src="//cdn.jsdelivr.net/npm/docsify-tabs@1"></script>
+    <script src="//cdn.jsdelivr.net/npm/docsify/lib/plugins/front-matter.min.js"></script>
+    <script src="//cdn.jsdelivr.net/npm/docsify-copy-code"></script>
+    <script src="//cdn.jsdelivr.net/npm/docsify-plugin-flexible-alerts"></script>
+    <script src="//cdn.jsdelivr.net/npm/docsify-mustache"></script>
+    <style>
+      :root {
+        --theme-hue: 207;
+        --theme-saturation: 44%;
+        --theme-lightness: 49%;
+        --cover-background-color: hsl(
+          var(--theme-hue),
+          var(--theme-saturation),
+          60%
+        );
+        --theme-color: #4682b4;
+        --base-color: #12538a;
+        --heading-color: #12538a;
+        --code-inline-color: #12538a;
+        --code-theme-text: #12538a;
+        --code-inline-background: #f0f0f0;
+        --content-max-width: 80em;
+      }
+    </style>
+  </body>
 </html>
-
