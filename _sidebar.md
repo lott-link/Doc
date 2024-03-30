@@ -9,4 +9,4 @@
   - [versions](bankNote/version.md)  
 
 - [Minter.Rocks](minterRocks/minterRocks.md)
-- [test](https://raw.githubusercontent.com/lott-link/docs/main/README.md)
+
