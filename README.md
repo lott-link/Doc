@@ -6,9 +6,11 @@
 
 # Lott Link
 
-Lott Link Try to Solve part of the WEB3 problem. The non Solve problem OF Randomness.ß
-In this project you can find different games and lotteries that need Randomness on the digital assets like NFT and crypto tokens, It also provides some tools for secure transferring assets to the main net.
-  Welcome to the New World.
+## about Lott Link
+This project about to launch in Web3 world to make the power decentralize and let crowd have the power, in this manner it try to bring lots of people to gether in this honor it Try Etherum block chain as it main block chain and use Chain link to bring more chain availble. At first it try to make sure both of it partner are doing well so it try to challenge them in the way to verify their honesty. mostly Chain Link that it is not transparent the way it work And it is not possible to run a node sepratily to verify it's honestly.
+
+## Road Map:
+instead of All the game we are building previosly, We see that there is need for upgrading contract and varible to be update with Chain Link. They will Update their protocols so we need to update also. at fist we deploy all of our contract immutible but we see that when the protocol update we need some update also. So at in our new approch we decide to run a DAO to be possible for community to upgrade the contracts. This DAO run on Etherume and it will be brige to other chain throw the Chain Link CCIP.
 
 ## Naming:
 
